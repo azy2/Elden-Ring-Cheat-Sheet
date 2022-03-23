@@ -19,6 +19,48 @@ def to_snake_case(name):
 with open("data.yaml", 'r') as data:
     yml = yaml.safe_load_all(data)
     pages = [page for page in yml]
+
+    page_ids = set()
+    section_ids = set()
+    for page in pages:
+        if page['id'] in page_ids:
+            print("Duplicate page id '" + page['id'] + "' found. All page ids must be unique.")
+            quit()
+        else:
+            page_ids.add(page['id'])
+
+        section_nums = set()
+        for section in page['sections']:
+            if section['id'] in section_ids:
+                print("Duplicate section id '" + section['id'] + "' found in page '" + page['id'] + "'. All section ids must be unique.")
+                quit()
+            else:
+                section_ids.add(section['id'])
+            if section['num'] in section_nums:
+                print("Duplicate section num '" + str(section['num']) + "' found in page '" + page['id'] + "'. All section nums must be unique.")
+                quit()
+            else:
+                section_nums.add(section['num'])
+            item_nums = set()
+            items = peekable(section['items'])
+            for item in items:
+                if item[0] in item_nums:
+                    print("Duplicate item num '" + str(item[0]) + "' in section '" + section['id'] + "' found in page '" + page['id'] + "'. All item nums must be unique within it's section.")
+                    quit()
+                else:
+                    item_nums.add(item[0])
+                if isinstance(items.peek([0])[0], list):
+                    sub_item_nums = set()
+                    item = next(items)
+                    for subitem in item:
+                        if subitem[0] in sub_item_nums:
+                            print("Duplicate sub-item num '" + str(subitem[0]) + "' in section '" + section['id'] + "' found in page '" + page['id'] + "'. All item nums must be unique within it's section.")
+                            quit()
+                        else:
+                            sub_item_nums.add(subitem[0])
+
+
+
     with doc.head:
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
