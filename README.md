@@ -1,24 +1,38 @@
 # Dark Souls 3 Cheat Sheet
 
-To view the cheat sheet [click here](http://zkjellberg.github.io/dark-souls-3-cheat-sheet/).
+To view the cheat sheet [click here](https://azy2.github.io/Elden-Ring-Intended-Route/).
 
-This checklist was created by adopting the source code from the [Dark Souls 2 Cheat Sheet](https://github.com/smcnabb/dark-souls-2-cheat-sheet/tree/gh-pages) created by [Stephen McNabb](https://github.com/smcnabb).
+This checklist was created by adopting the source code from the [Dark Souls 3 Cheat Sheet](https://github.com/ZKjellberg/dark-souls-3-cheat-sheet) created by [ZKjellberg](https://github.com/zkjellberg).
 
-The walkthrough is thanks to [DeathGodGarra's NPC Side Quests Guide V2](https://www.gamefaqs.com/boards/168566-dark-souls-iii/73599466).
+The walkthrough is thanks to [Athrek](https://www.reddit.com/r/Roundtable_Guides/comments/tiouti/guide_to_the_intended_route_through_the_game/).
 
 ## Contribution Guide
 
 If you are interested in contributing to this guide, I welcome Pull Requests.
 
-For some background on how the guide code is written, here is a sample item on the checklist:
+All entries in a checklist are stored in data.yaml.
 
+Each page of the site starts like this:
+```yaml
+---
+title: "The Page Title"
+id: page_title
+sections:
 ```
-<li data-id="playthrough_13_20" class="f_gem f_misc">Continue left until you can enter a room with a Large Soul of a Nameless Soldier and a Raw Gem</li>
+
+Eeach section on a page starts like this:
+```yaml
+  -
+    title: Section Title
+    id: section_title
+    num: 1
+    items:
+      - [1, "f_boss", "Boss fight info goes here"]
 ```
 
-The **data-id** is a unique ID used to store the user's progress. For example, ***playthrough_13_20*** is the 20th task in zone 13. New data-ids must be used in ascending order, but you can place the new entries anywhere within a zone.
+All ids haveto be unique and the `num:` field also has to be unique. Within an item the first number has to be uinque as well. If you are adding a new line find the biggest number in that section and increase it by 1. The numbers do not have to be in order and you should not ever change an existing number because it will break everyones saved progress.
 
-The **class="f_gem f_misc"** field is used for the filtering system. This task provides the user with a gem and a consumable, so we use **f_gem** and **f_misc**. The full list of filter classes is:
+The second field in an item (`"f_boss"`) is used for the filtering system. The full list of filter classes is:
 
 | Class   | Description |
 |---      |--- |
@@ -42,7 +56,7 @@ The **class="f_gem f_misc"** field is used for the filtering system. This task p
 | f_cov   | Covenants |
 | f_misc  | *any other items* |
 
-If none of these filter classes match, use **class="f_none"**.
+If none of these filter classes match, use `""`, or consider adding a new one.
 
 In addition to the filter classes, there is a second type of classes used to control the visibility of entries based on which playthrough the user is on:
 
