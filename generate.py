@@ -82,36 +82,32 @@ with open("data.yaml", 'r') as data:
                         h += page['title']
                         h += span(id=page['id'] + "_overall_total")
                         with ul(cls="table_of_contents"):
-                            i = 0
                             for section in page['sections']:
-                                i += 1
                                 with li():
                                     a(section['title'], href="#" + section['id'])
-                                    span(id=page['id']  + "_nav_totals_" + str(i))
+                                    span(id=page['id']  + "_nav_totals_" + str(section['num']))
                         with div(cls="form-group"):
                             input_(type="search", id=page['id'] + "_search", cls="form-control", placeholder="Start typing to filter results...")
                         
                         with div(id=page['id']+"_list"):
-                            i = 0
                             for section in page['sections']:
-                                i += 1
                                 section_title = h3(id=section['id'])
                                 section_title += a(href="#" + section['id'] + "_col", data_toggle="collapse", cls="btn btn-primary btn-collapse btn-sm")
-                                section_title += section['title']
-                                section_title += span(id=page['id'] + "_totals_" + str(i))
+                                if 'link' in section:
+                                    section_title += a(section['title'], href=section['link'])
+                                else:
+                                    section_title += section['title']
+                                section_title += span(id=page['id'] + "_totals_" + str(section['num']))
                                 with ul(id=section['id'] + "_col", cls="collapse in"):
-                                    j = 0
                                     items = peekable(section['items'])
                                     for item in items:
-                                        j += 1
-                                        li(item, data_id=page['id'] + "_" + str(i) + "_" + str(j))
-                                        if isinstance(items.peek(0), list):
+                                        id = str(item[0])
+                                        li(data_id=page['id'] + "_" + str(section['num']) + "_" + id, cls=item[1]).add(raw(item[2]))
+                                        if isinstance(items.peek([0])[0], list):
                                             item = next(items)
                                             with ul():
-                                                k = 0
                                                 for subitem in item:
-                                                    k += 1
-                                                    li(subitem, data_id=page['id'] + "_" + str(i) + "_" + str(j) + "_" + str(k))
+                                                    li(data_id=page['id'] + "_" + str(section['num']) + "_" + id + "_" + str(item[0])).add(raw(subitem[2]))
                 with div(cls="tab-pane", id="tabFAQ"):
                     h2("FAQ")
                     raw("""
@@ -185,7 +181,7 @@ with open("data.yaml", 'r') as data:
                             
         div(cls="hiddenfile").add(input_(name="upload", type="file", id="fileInput"))
 
-        a(cls="btn btn-default btn-sm fadingbutton back-to-top").add("Back to Top&thinsp;", span(cls="glyphicon glyphicon-arrow-up"))
+        a(cls="btn btn-default btn-sm fadingbutton back-to-top").add(raw("Back to Top&thinsp;"), span(cls="glyphicon glyphicon-arrow-up"))
                 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
         script(src="https://cdn.rawgit.com/andris9/jStorage/v0.4.12/jstorage.min.js")
