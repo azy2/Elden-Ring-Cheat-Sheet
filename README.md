@@ -1,4 +1,4 @@
-# Dark Souls 3 Cheat Sheet
+# Elden Ring Cheat Sheet
 
 To view the cheat sheet [click here](https://azy2.github.io/Elden-Ring-Intended-Route/).
 
