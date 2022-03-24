@@ -590,7 +590,7 @@ sections:
     title: Bows
     link: "https://eldenring.wiki.fextralife.com/Bows"
     id: bows
-    num: 3
+    num: 10
     items:
       - [1, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Longbow\">Longbow</a>"]
       - [2, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Albinauric+Bow\">Albinauric Bow</a>"]
@@ -700,7 +700,7 @@ sections:
     title: Daggers
     link: "https://eldenring.wiki.fextralife.com/Daggers"
     id: daggers
-    num: 10
+    num: 3
     items:
       - [1, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Dagger\">Dagger</a>"]
       - [2, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Black+Knife\">Black Knife</a>"]
