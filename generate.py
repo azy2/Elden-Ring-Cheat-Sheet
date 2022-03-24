@@ -243,6 +243,17 @@ with open("data.yaml", 'r') as data:
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.8.0/jets.min.js")
         script(src="js/jquery.highlight.js")
         script(src="js/main.js")
+        raw("""
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7FMWDCTF5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7FMWDCTF5');
+</script>
+""")
 
 
 
