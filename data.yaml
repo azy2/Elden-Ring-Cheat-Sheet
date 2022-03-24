@@ -587,10 +587,45 @@ sections:
       - [1, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Hand+Ballista\">Hand Ballista</a>"]
       - [2, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Jar+Cannon\">Jar Cannon</a>"]
   -
+    title: Bows
+    link: "https://eldenring.wiki.fextralife.com/Bows"
+    id: bows
+    num: 3
+  -
+    title: Claws
+    link: "https://eldenring.wiki.fextralife.com/Claws"
+    id: claws
+    num: 4
+  -
+    title: Colossal Swords
+    link: "https://eldenring.wiki.fextralife.com/Colossal+Swords"
+    id: colossal_swords
+    num: 5
+  -
+    title: Colossal Weapons
+    link: "https://eldenring.wiki.fextralife.com/Colossal+Weapons"
+    id: colossal_weapons
+    num: 6
+  -
+    title: Crossbows
+    link: "https://eldenring.wiki.fextralife.com/Crossbows"
+    id: crossbows
+    num: 7
+  -
+    title: Curved Greatswords
+    link: "https://eldenring.wiki.fextralife.com/Curved+Greatswords"
+    id: curved_greatswords
+    num: 8
+  -
+    title: Curved Swords
+    link: "https://eldenring.wiki.fextralife.com/Curved+Swords"
+    id: curved_swords
+    num: 9
+  -
     title: Daggers
     link: "https://eldenring.wiki.fextralife.com/Daggers"
     id: daggers
-    num: 3
+    num: 10
     items:
       - [1, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Dagger\">Dagger</a>"]
       - [2, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Black+Knife\">Black Knife</a>"]
@@ -608,4 +643,3 @@ sections:
       - [14, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Bloodstained+Dagger\">Bloodstained Dagger</a>"]
       - [15, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Erdsteel+Dagger\">Erdsteel Dagger</a>"]
       - [16, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Blade+of+Calling\">Blade of Calling</a>"]
----
