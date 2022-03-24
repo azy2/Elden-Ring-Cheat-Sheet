@@ -33,6 +33,7 @@ Eeach section on a page starts like this:
     num: 1
     items:
       - [1, "f_boss", "Boss fight info goes here"]
+      - [2, "f_boss", "You can make tables", "By having multiple entries", "Like this"]
 ```
 
 All ids haveto be unique and the `num:` field also has to be unique. Within an item the first number has to be uinque as well. If you are adding a new line find the biggest number in that section and increase it by 1. The numbers do not have to be in order and you should not ever change an existing number because it will break everyones saved progress.

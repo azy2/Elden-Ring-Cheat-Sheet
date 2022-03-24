@@ -471,8 +471,8 @@ var profilesKey = 'darksouls3_profiles';
     function addCheckbox(el) {
         var $el = $(el);
         // assuming all content lies on the first line
-        var content = $el.html().split('\n')[0];
-        var sublists = $el.children('ul');
+        var content = $el.html();
+        // var sublists = $el.children('ul');
 
         content =
             '<div class="checkbox">' +
@@ -482,7 +482,7 @@ var profilesKey = 'darksouls3_profiles';
                 '</label>' +
             '</div>';
 
-        $el.html(content).append(sublists);
+        $el.html(content);
 
         if (profiles[profilesKey][profiles.current].checklistData[$el.attr('data-id')] === true) {
             $('#' + $el.attr('data-id')).prop('checked', true);

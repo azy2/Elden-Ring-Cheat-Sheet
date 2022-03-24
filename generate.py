@@ -144,12 +144,24 @@ with open("data.yaml", 'r') as data:
                                     items = peekable(section['items'])
                                     for item in items:
                                         id = str(item[0])
-                                        li(data_id=page['id'] + "_" + str(section['num']) + "_" + id, cls=item[1]).add(raw(item[2]))
+                                        with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id, cls=item[1]):
+                                            if len(item) == 3:
+                                                raw(item[2])
+                                            else:
+                                                with table(cls="table table-bordered table-sm").add(tbody()).add(tr()):
+                                                    for pos in range(2, len(item)):
+                                                        td().add(raw(item[pos]))
                                         if isinstance(items.peek([0])[0], list):
                                             item = next(items)
                                             with ul():
                                                 for subitem in item:
-                                                    li(data_id=page['id'] + "_" + str(section['num']) + "_" + id + "_" + str(item[0])).add(raw(subitem[2]))
+                                                    with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id + "_" + str(item[0])):
+                                                        if len(subitem) == 3:
+                                                            raw(subitem[2])
+                                                        else:
+                                                            with table(cls="table table-bordered table-sm").add(tbody()).add(tr()):
+                                                                for pos in range(2, len(subitem)):
+                                                                    td().add(raw(subitem[pos]))
                 with div(cls="tab-pane", id="tabFAQ"):
                     h2("FAQ")
                     raw("""
