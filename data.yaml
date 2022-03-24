@@ -555,3 +555,29 @@ sections:
       - [2, "", "2. Nomad just North of the Forest-Spanning Greatbridge Grace on the South side of the broken bridge in North/Central Altus Plateau. "]
       - [3, "", "3. Cathedral of Dragon Communion in South Caelid, West of Castle Redmane. "]
       - [4, "", "4. Crumbling Farum Azula on a roof in the South-West section past a dragon."]
+---
+title: Weapons
+id: weapons
+sections:
+  -
+    title: Daggers
+    id: daggers
+    num: 1
+    items:
+      - [1, "f_weap", "Dagger"]
+      - [2, "f_weap", "Black Knife"]
+      - [3, "f_weap", "Parrying Dagger"]
+      - [4, "f_weap", "Misericorde"]
+      - [5, "f_weap", "Reduvia"]
+      - [6, "f_weap", "Crystal Knife"]
+      - [7, "f_weap", "Celebrant's Sickle"]
+      - [8, "f_weap", "Glintstone Kris"]
+      - [9, "f_weap", "Scorpion's Stinger"]
+      - [10, "f_weap", "Great Knife"]
+      - [11, "f_weap", "Wakizashi"]
+      - [12, "f_weap", "Cinquedea"]
+      - [13, "f_weap", "Ivory Sickle"]
+      - [14, "f_weap", "Bloodstained Dagger"]
+      - [15, "f_weap", "Erdsteel Dagger"]
+      - [16, "f_weap", "Blade of Calling"]
+---
