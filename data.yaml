@@ -560,9 +560,34 @@ title: Weapons
 id: weapons
 sections:
   -
+    title: Axes
+    id: axes
+    num: 1
+    items:
+      - [1, "f_weap", "Battle Axe"]
+      - [2, "f_weap", "Forked Hatchet"]
+      - [3, "f_weap", "Hand Axe"]
+      - [4, "f_weap", "Jawbone Axe"]
+      - [5, "f_weap", "Iron Cleaver"]
+      - [6, "f_weap", "Ripple Blade"]
+      - [7, "f_weap", "Celebrant's Cleaver"]
+      - [8, "f_weap", "Icerind Hatchet"]
+      - [9, "f_weap", "Highland Axe"]
+      - [10, "f_weap", "Sacrificial Axe"]
+      - [11, "f_weap", "Rosus' Axe"]
+      - [12, "f_weap", "Stormhawk Axe"]
+      - [13, "f_weap", "Warped Axe"]
+  -
+    title: Ballistas
+    id: ballistas
+    num: 2
+    items:
+      - [1, "f_weap", "Hand Ballista"]
+      - [2, "f_weap", "Jar Cannon"]
+  -
     title: Daggers
     id: daggers
-    num: 1
+    num: 3
     items:
       - [1, "f_weap", "Dagger"]
       - [2, "f_weap", "Black Knife"]
