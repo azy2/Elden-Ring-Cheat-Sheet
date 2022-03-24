@@ -561,48 +561,51 @@ id: weapons
 sections:
   -
     title: Axes
+    link: "https://eldenring.wiki.fextralife.com/Axes"
     id: axes
     num: 1
     items:
-      - [1, "f_weap", "Battle Axe"]
-      - [2, "f_weap", "Forked Hatchet"]
-      - [3, "f_weap", "Hand Axe"]
-      - [4, "f_weap", "Jawbone Axe"]
-      - [5, "f_weap", "Iron Cleaver"]
-      - [6, "f_weap", "Ripple Blade"]
-      - [7, "f_weap", "Celebrant's Cleaver"]
-      - [8, "f_weap", "Icerind Hatchet"]
-      - [9, "f_weap", "Highland Axe"]
-      - [10, "f_weap", "Sacrificial Axe"]
-      - [11, "f_weap", "Rosus' Axe"]
-      - [12, "f_weap", "Stormhawk Axe"]
-      - [13, "f_weap", "Warped Axe"]
+      - [1, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Battle+Axe\">Battle Axe</a>"]
+      - [2, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Forked+Hatchet\">Forked Hatchet</a>"]
+      - [3, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Hand+Axe\">Hand Axe</a>"]
+      - [4, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Jawbone+Axe\">Jawbone Axe</a>"]
+      - [5, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Iron+Cleaver\">Iron Cleaver</a>"]
+      - [6, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Ripple+Blade\">Ripple Blade</a>"]
+      - [7, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Celebrant's+Cleaver\">Celebrant's Cleaver</a>"]
+      - [8, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Icerind+Hatchet\">Icerind Hatchet</a>"]
+      - [9, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Highland+Axe\">Highland Axe</a>"]
+      - [10, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Sacrificial+Axe\">Sacrificial Axe</a>"]
+      - [11, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Rosus'+Axe\">Rosus' Axe</a>"]
+      - [12, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Stormhawk+Axe\">Stormhawk Axe</a>"]
+      - [13, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Warped+Axe\">Warped Axe</a>"]
   -
     title: Ballistas
+    link: "https://eldenring.wiki.fextralife.com/Ballistas"
     id: ballistas
     num: 2
     items:
-      - [1, "f_weap", "Hand Ballista"]
-      - [2, "f_weap", "Jar Cannon"]
+      - [1, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Hand+Ballista\">Hand Ballista</a>"]
+      - [2, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Jar+Cannon\">Jar Cannon</a>"]
   -
     title: Daggers
+    link: "https://eldenring.wiki.fextralife.com/Daggers"
     id: daggers
     num: 3
     items:
-      - [1, "f_weap", "Dagger"]
-      - [2, "f_weap", "Black Knife"]
-      - [3, "f_weap", "Parrying Dagger"]
-      - [4, "f_weap", "Misericorde"]
-      - [5, "f_weap", "Reduvia"]
-      - [6, "f_weap", "Crystal Knife"]
-      - [7, "f_weap", "Celebrant's Sickle"]
-      - [8, "f_weap", "Glintstone Kris"]
-      - [9, "f_weap", "Scorpion's Stinger"]
-      - [10, "f_weap", "Great Knife"]
-      - [11, "f_weap", "Wakizashi"]
-      - [12, "f_weap", "Cinquedea"]
-      - [13, "f_weap", "Ivory Sickle"]
-      - [14, "f_weap", "Bloodstained Dagger"]
-      - [15, "f_weap", "Erdsteel Dagger"]
-      - [16, "f_weap", "Blade of Calling"]
+      - [1, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Dagger\">Dagger</a>"]
+      - [2, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Black+Knife\">Black Knife</a>"]
+      - [3, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Parrying+Dagger\">Parrying Dagger</a>"]
+      - [4, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Misericorde\">Misericorde</a>"]
+      - [5, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Reduvia\">Reduvia</a>"]
+      - [6, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Crystal+Knife\">Crystal Knife</a>"]
+      - [7, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Celebrant's+Sickle\">Celebrant's Sickle</a>"]
+      - [8, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Glintstone+Kris\">Glintstone Kris</a>"]
+      - [9, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Scorpion's+Stinger\">Scorpion's Stinger</a>"]
+      - [10, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Great+Knife\">Great Knife</a>"]
+      - [11, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Wakizashi\">Wakizashi</a>"]
+      - [12, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Cinquedea\">Cinquedea</a>"]
+      - [13, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Ivory+Sickle\">Ivory Sickle</a>"]
+      - [14, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Bloodstained+Dagger\">Bloodstained Dagger</a>"]
+      - [15, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Erdsteel+Dagger\">Erdsteel Dagger</a>"]
+      - [16, "f_weap", "<a href=\"https://eldenring.wiki.fextralife.com/Blade+of+Calling\">Blade of Calling</a>"]
 ---
