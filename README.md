@@ -13,7 +13,7 @@ If you are interested in contributing to this guide, please do so. Follow this s
 1. Make a github account.
 2. Download and install [Github Desktop](https://desktop.github.com/) and then sign in with your github account.
 3. Then you will need to fork this project. That will create your own project that you download and make changes to. Later you'll submit a request to bring those changes back here and onto the website. To fork this project click the fork button on the top right of the page.
-4. Add whatever you want to `data.yml`. The data has to be in a specific format:
+4. Add whatever you want to `data.yaml`. Don't edit `index.html` as that is automatically generated based off of `data.yaml`. The data has to be in a specific format:
 
 All entries in a checklist are stored in data.yaml.
 
