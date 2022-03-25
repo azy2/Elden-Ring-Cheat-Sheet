@@ -33,13 +33,13 @@
               <a data-target="#tabnpc_quests,#btnHideCompleted" data-toggle="tab" href="#tabnpc_quests">NPC Questlines</a>
             </li>
             <li>
-              <a data-target="#tabcookbooks,#btnHideCompleted" data-toggle="tab" href="#tabcookbooks">Cookbooks</a>
+              <a data-target="#tabbosses,#btnHideCompleted" data-toggle="tab" href="#tabbosses">Bosses</a>
             </li>
             <li>
               <a data-target="#tabweapons,#btnHideCompleted" data-toggle="tab" href="#tabweapons">Weapons</a>
             </li>
             <li>
-              <a data-target="#tababoveground_bosses,#btnHideCompleted" data-toggle="tab" href="#tababoveground_bosses">Aboveground Bosses</a>
+              <a data-target="#tabcookbooks,#btnHideCompleted" data-toggle="tab" href="#tabcookbooks">Cookbooks</a>
             </li>
             <li>
               <a data-toggle="tab" href="#tabFAQ">
@@ -743,154 +743,2549 @@
             </ul>
           </div>
         </div>
-        <div class="tab-pane" id="tabcookbooks">
-          <h2>Cookbooks
-            <span id="cookbooks_overall_total"></span>
+        <div class="tab-pane" id="tabbosses">
+          <h2>Bosses
+            <span id="bosses_overall_total"></span>
           </h2>
           <ul class="table_of_contents">
             <li>
-              <a href="#nomadic_cookbooks">Nomadic Cookbook</a>
-              <span id="cookbooks_nav_totals_1"></span>
+              <a href="#weeping_peninsula_bosses">Weeping Peninsula</a>
+              <span id="bosses_nav_totals_1"></span>
             </li>
             <li>
-              <a href="#missionary_cookbooks">Missionary Cookbook</a>
-              <span id="cookbooks_nav_totals_2"></span>
+              <a href="#limgrave_bosses">Limgrave</a>
+              <span id="bosses_nav_totals_2"></span>
             </li>
             <li>
-              <a href="#armorer_cookbooks">Armorer Cookbook</a>
-              <span id="cookbooks_nav_totals_3"></span>
+              <a href="#roundtable_hold_bosses">Roundtable Hold</a>
+              <span id="bosses_nav_totals_3"></span>
             </li>
             <li>
-              <a href="#fevors_cookbook">Fevor's Cookbook</a>
-              <span id="cookbooks_nav_totals_4"></span>
+              <a href="#liurniaofthe_lakes_bosses">Liurnia of the Lakes</a>
+              <span id="bosses_nav_totals_4"></span>
             </li>
             <li>
-              <a href="#glintstone_crafttsmans_cookbook">Glintstone Craftsman's Cookbook</a>
-              <span id="cookbooks_nav_totals_5"></span>
+              <a href="#caelid_bosses">Caelid</a>
+              <span id="bosses_nav_totals_5"></span>
             </li>
             <li>
-              <a href="#frenzied_cookbook">Frenzied Cookbook</a>
-              <span id="cookbooks_nav_totals_6"></span>
+              <a href="#altus_plataeu_bosses">Altus Plataeu</a>
+              <span id="bosses_nav_totals_6"></span>
             </li>
             <li>
-              <a href="#perfumers_cookbook">Perfumer's Cookbook</a>
-              <span id="cookbooks_nav_totals_7"></span>
+              <a href="#mt_gelmir_bosses">Mt. Gelmir</a>
+              <span id="bosses_nav_totals_7"></span>
             </li>
             <li>
-              <a href="#ancient_dragon_cookbooks">Ancient Dragon Apostle's Cookbook</a>
-              <span id="cookbooks_nav_totals_8"></span>
+              <a href="#leyndell_royal_capital_bosses">Leyndell, Royal Capital</a>
+              <span id="bosses_nav_totals_8"></span>
+            </li>
+            <li>
+              <a href="#mountaintopsofthe_giants_bosses">Mountaintops of the Giants</a>
+              <span id="bosses_nav_totals_9"></span>
+            </li>
+            <li>
+              <a href="#consecrated_snowfield_bosses">Consecrated Snowfield</a>
+              <span id="bosses_nav_totals_10"></span>
+            </li>
+            <li>
+              <a href="#crumbling_farum_azula_bosses">Crumbling Farum Azula</a>
+              <span id="bosses_nav_totals_11"></span>
+            </li>
+            <li>
+              <a href="#leyndell_ashen_capital_bosses">Leyndell, Ashen Capital</a>
+              <span id="bosses_nav_totals_12"></span>
+            </li>
+            <li>
+              <a href="#siofra_river_bosses">Siofra River</a>
+              <span id="bosses_nav_totals_13"></span>
+            </li>
+            <li>
+              <a href="#nokron_eternal_city_bosses">Nokron, Eternal City</a>
+              <span id="bosses_nav_totals_14"></span>
+            </li>
+            <li>
+              <a href="#mohgwyn_palace_bosses">Mohgwyn Palace</a>
+              <span id="bosses_nav_totals_15"></span>
+            </li>
+            <li>
+              <a href="#ainsel_river_bosses">Ainsel River</a>
+              <span id="bosses_nav_totals_16"></span>
+            </li>
+            <li>
+              <a href="#lakeof_rot_bosses">Lake of Rot</a>
+              <span id="bosses_nav_totals_17"></span>
+            </li>
+            <li>
+              <a href="#deeproot_depths_bosses">Deeproot Depths</a>
+              <span id="bosses_nav_totals_18"></span>
             </li>
           </ul>
           <div class="form-group">
-            <input class="form-control" id="cookbooks_search" placeholder="Start typing to filter results..." type="search">
+            <input class="form-control" id="bosses_search" placeholder="Start typing to filter results..." type="search">
           </div>
-          <div id="cookbooks_list">
-            <h3 id="nomadic_cookbooks">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#nomadic_cookbooks_col"></a>Nomadic Cookbook
-              <span id="cookbooks_totals_1"></span>
+          <div id="bosses_list">
+            <h3 id="weeping_peninsula_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#weeping_peninsula_bosses_col"></a>Weeping Peninsula
+              <span id="bosses_totals_1"></span>
             </h3>
-            <ul class="collapse in" id="nomadic_cookbooks_col">
-              <li class="" data-id="cookbooks_1_1">1. Kale in Church of Elleh</li>
-              <li class="" data-id="cookbooks_1_2">2. Kale in Church of Elleh</li>
-              <li class="" data-id="cookbooks_1_3">3. Nomad in North Limgrave, West of Summonwater Village</li>
-              <li class="" data-id="cookbooks_1_4">4. Next to giant bear by Patches teleport(open the trapped chest in Murkwater Cave, located in the river going North from the lake in Limgrave)</li>
-              <li class="" data-id="cookbooks_1_5">5. Nomad Northwest of Fort Haight in the South-East section of the forest in East Limgrave</li>
-              <li class="" data-id="cookbooks_1_6">6. Fort Haight in the South-East section of the forest in East Limgrave</li>
-              <li class="" data-id="cookbooks_1_7">7. North of Stormhill Shack at the edge of the broken bridge</li>
-              <li class="" data-id="cookbooks_1_8">8. Tombsward Cave, South-East of Fourth Church of Marika in North-West Weeping Peninsula</li>
-              <li class="" data-id="cookbooks_1_9">9. Tombs ward Catacombs, South of Church of the Pilgrimage in North Weeping Peninsula. </li>
-              <li class="" data-id="cookbooks_1_10">10. In Stormveil Castle, from Rampart Tower Grace, go through the North Door and jump to the roof in the East. Keep going this way and you'll find it. </li>
-              <li class="" data-id="cookbooks_1_11">11. Nomad at the entrance to Liurnia Lake</li>
-              <li class="" data-id="cookbooks_1_12">12. Rose Church, South-West of Raya Lucaria</li>
-              <li class="" data-id="cookbooks_1_13">13. Nomad North of Bellum Church in North-East Liurnia Lake</li>
-              <li class="" data-id="cookbooks_1_14">14. Smoldering Church North-East Limgrave/North-West Caelid</li>
-              <li class="" data-id="cookbooks_1_15">15. Nomad South of Caelid swamp at fork in the road. </li>
-              <li class="" data-id="cookbooks_1_16">16. Nomad in South/Center of Ainsel River. </li>
-              <li class="" data-id="cookbooks_1_17">17. Nomad in center of Siofra River on top of wooden house. </li>
-              <li class="" data-id="cookbooks_1_18">18. Nomad in center of Siofra River on top of wooden house.</li>
-              <li class="" data-id="cookbooks_1_19">19. Woodfolk Ruins, East of the Minor Erdtree in North Altus Plateau</li>
-              <li class="" data-id="cookbooks_1_20">20. Nomad in North Mt. Gelmir, North-East of Volcano Manor</li>
-              <li class="" data-id="cookbooks_1_21">21. Volcano Manor in the area hidden behind the Illusory Wall in one of the hallway rooms. </li>
-              <li class="" data-id="cookbooks_1_22">22. Chest in West Lake of Rot, West of Ainsel River underground. May require Ranni's questline. </li>
-              <li class="" data-id="cookbooks_1_23">23. Consecrated Snowfield, North of the first Grace. Requires Haligtree Medallion</li>
-              <li class="" data-id="cookbooks_1_24">24. Mohgwyn Palace on the edge of the cliffs past the swamp. Requires Haligtree Medallion or completion of White-Faced Varre's Questline. </li>
+            <ul class="collapse in" id="weeping_peninsula_bosses_col">
+              <li class="" data-id="bosses_1_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Burial Tree Watchdog</td>
+                      <td class="col-md-4">Impaler's Catacomb</td>
+                      <td class="col-md-4">Has imps (x4) with it.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Runebear</td>
+                      <td class="col-md-4">Earthbore Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Demi-Human Queen</td>
+                      <td class="col-md-4">Demi-Human Forest Ruins</td>
+                      <td class="col-md-4">Field boss. Surrounded by Demi-Humans.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Castle Morne Rampart</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Deathbird</td>
+                      <td class="col-md-4">Castle Morne Outskirts</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Cemetary Shade</td>
+                      <td class="col-md-4">Tombsward Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Erdtree Avatar</td>
+                      <td class="col-md-4">Minor Erdtree</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Scaly Misbegotten</td>
+                      <td class="col-md-4">Morne Tunnel</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Miranda, the Blighted Bloom</td>
+                      <td class="col-md-4">Tombsward Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ancient Hero of Zamor</td>
+                      <td class="col-md-4">Weeping Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_1_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Leonine Misbegotten</td>
+                      <td class="col-md-4">Castle Morne (South)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
-            <h3 id="missionary_cookbooks">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#missionary_cookbooks_col"></a>Missionary Cookbook
-              <span id="cookbooks_totals_2"></span>
+            <h3 id="limgrave_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#limgrave_bosses_col"></a>Limgrave
+              <span id="bosses_totals_2"></span>
             </h3>
-            <ul class="collapse in" id="missionary_cookbooks_col">
-              <li class="" data-id="cookbooks_2_1">1. Kale in Church of Elleh</li>
-              <li class="" data-id="cookbooks_2_2">2. Patches in Murkwater Cave located in the river going North from the lake in Limgrave.</li>
-              <li class="" data-id="cookbooks_2_3">3. Smoldering Church North-East Limgrave/North-West Caelid</li>
-              <li class="" data-id="cookbooks_2_4">4. Minor Erdtree Church, Southwest Leyndell Capital. </li>
-              <li class="" data-id="cookbooks_2_5">5. Siofra Aqueduct, in the crater in South-East forest in East Limgrave, made after Radahn fight. Past the Crucible Knight, North-East of Ancestral Woods Grace. </li>
-              <li class="" data-id="cookbooks_2_6">6. Volcano Manor, from Temple of Eiglay Grace, go up the elevator and hop down into the lava. Go past the the Iron maiden, through a window, down a ladder, and down the stairs.</li>
-              <li class="" data-id="cookbooks_2_7">7. Nomad in Mountaintops of the Giants, near the Ancient Snow Valley Ruins Grace. </li>
+            <ul class="collapse in" id="limgrave_bosses_col">
+              <li class="" data-id="bosses_2_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Soldier of Godrick</td>
+                      <td class="col-md-4">Stranded Graveyard</td>
+                      <td class="col-md-4">Tutorial boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Demi-Human Chief (x2)</td>
+                      <td class="col-md-4">Coastal Cave</td>
+                      <td class="col-md-4">Required for Boc the Seamster's quest. Arena also has a bunch of demi-humans.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Burial Tree Watchdog</td>
+                      <td class="col-md-4">Stormfoot Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Beastman of Farum Azula</td>
+                      <td class="col-md-4">Groveside Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Stonedigger Troll</td>
+                      <td class="col-md-4">Limgrave Tunnels</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Grave Warden Duelist</td>
+                      <td class="col-md-4">Murkwater Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Bloody Finger Nerjius</td>
+                      <td class="col-md-4">Agheel River</td>
+                      <td class="col-md-4">NPC invader, not a real "boss".</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Patches</td>
+                      <td class="col-md-4">Murkwater Cave</td>
+                      <td class="col-md-4">Only half a boss fight, unless you really wanna kill Patches.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Guardian Golem</td>
+                      <td class="col-md-4">Highroad Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Black Knife Assassin</td>
+                      <td class="col-md-4">Deathtouched Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Recuscant Henricus</td>
+                      <td class="col-md-4">Colosseum Road</td>
+                      <td class="col-md-4">Another NPC invader.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_12">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Mad Pumpkin Head</td>
+                      <td class="col-md-4">Waypoint Ruins</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_13">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Highway Bridge</td>
+                      <td class="col-md-4">Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_14">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Tree Sentinel</td>
+                      <td class="col-md-4">Church of Elleh Road</td>
+                      <td class="col-md-4">Is one annoying bastard.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_15">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Flying Dragon Agheel</td>
+                      <td class="col-md-4">Agheel Lake</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_16">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Tibia Mariner</td>
+                      <td class="col-md-4">Summonwater Village</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_17">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Anastasia, Tarnished-Eater</td>
+                      <td class="col-md-4">Smoldering Village</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_18">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Bloodhound Knight Darriwil</td>
+                      <td class="col-md-4">Forlorn Hound Evergaol</td>
+                      <td class="col-md-4">Related to Blaidd's initial quest, can kill him first and still progress quest normally.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_19">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Crucible Knight</td>
+                      <td class="col-md-4">Stormhill Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_20">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Bell Bearing Hunter</td>
+                      <td class="col-md-4">Warmaster's Shack</td>
+                      <td class="col-md-4">Field boss. Nighttime only. Buy something from Bernhal. Pass time, then rest once to summon.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_21">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Deathbird</td>
+                      <td class="col-md-4">Warmaster's Shack East</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_22">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Old Knight Istvan</td>
+                      <td class="col-md-4">Colosseum Road</td>
+                      <td class="col-md-4">NPC. You can invade his world. Related to Volcano Manor quest.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_23">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ulcerated Tree Spirit</td>
+                      <td class="col-md-4">Fringefolk Hero's Grave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_24">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ulcerated Tree Spirit</td>
+                      <td class="col-md-4">Stormveil Castle</td>
+                      <td class="col-md-4">Boss enemy, but not "real boss". Easily accessible by dropping off side near Rampart Grace.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_25">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Crucible Knight</td>
+                      <td class="col-md-4">Stormveil Castle</td>
+                      <td class="col-md-4">Boss enemy, but not "real boss". Easily accessible by dropping off rampart near hidden knifebird.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_26">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Grafted Scion</td>
+                      <td class="col-md-4">Stormveil Castle</td>
+                      <td class="col-md-4">Boss enemy, but not "real boss".</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_27">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Lion Guardian</td>
+                      <td class="col-md-4">Stormveil Castle</td>
+                      <td class="col-md-4">Sort of a field boss. Near Divine Tower of Limgrave entrance.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_28">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Margit, the Fell Omen</td>
+                      <td class="col-md-4">Stormveil Castle</td>
+                      <td class="col-md-4">Main boss. Required to get to Godrick the Grafted.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_2_29">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godrick the Grafted</td>
+                      <td class="col-md-4">Stormveil Castle</td>
+                      <td class="col-md-4">Main boss. Semi-required for story progression.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
-            <h3 id="armorer_cookbooks">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#armorer_cookbooks_col"></a>Armorer Cookbook
-              <span id="cookbooks_totals_3"></span>
+            <h3 id="roundtable_hold_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#roundtable_hold_bosses_col"></a>Roundtable Hold
+              <span id="bosses_totals_3"></span>
             </h3>
-            <ul class="collapse in" id="armorer_cookbooks_col">
-              <li class="" data-id="cookbooks_3_1">1. In camp north-east of North Agheel Lake Grace</li>
-              <li class="" data-id="cookbooks_3_2">2. Nomad by Coastal Cave in South-West Limgrave</li>
-              <li class="" data-id="cookbooks_3_3">3. Nomad Northwest of Fort Haight in the South-East section of the forest in East Limgrave</li>
-              <li class="" data-id="cookbooks_3_4">4. Castle Redmane in South-East Caelid in the North-West gatehouse</li>
-              <li class="" data-id="cookbooks_3_5">5. Castle Redmane in South-East Caelid. Follow the path going through the door in the South-West. </li>
-              <li class="" data-id="cookbooks_3_6">6. Siofra River. West of the Siofra River Bank Grace</li>
-              <li class="" data-id="cookbooks_3_7">7. Fort Laiedd in West Mt. Gelmir. West of Volcano Manor. </li>
+            <ul class="collapse in" id="roundtable_hold_bosses_col">
+              <li class="" data-id="bosses_3_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Mad Tongue Alberich</td>
+                      <td class="col-md-4">Roundtable Hold</td>
+                      <td class="col-md-4">NPC invader. Jump off the balcony to area below and go near the large set of doors to trigger.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_3_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ensha of the Royal Remains</td>
+                      <td class="col-md-4">Roundtable Hold</td>
+                      <td class="col-md-4">Edgelord. Attacks you as an NPC invader after you get one half of the Haligree Secret Medallion.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
-            <h3 id="fevors_cookbook">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#fevors_cookbook_col"></a>Fevor's Cookbook
-              <span id="cookbooks_totals_4"></span>
+            <h3 id="liurniaofthe_lakes_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#liurniaofthe_lakes_bosses_col"></a>Liurnia of the Lakes
+              <span id="bosses_totals_4"></span>
             </h3>
-            <ul class="collapse in" id="fevors_cookbook_col">
-              <li class="" data-id="cookbooks_4_1">1. On a stone tomb south of Summonwater Village in North-East Limgrave</li>
-              <li class="" data-id="cookbooks_4_2">2. Nomad East of Raya Lucaria Main Gate Grace. Requires Glintstone Key gotten next to the Dragon West of Raya Lucaria.</li>
-              <li class="" data-id="cookbooks_4_3">3. Reward from Gideon Ofnir for information on Mohgwyn Dynasty Medallion. Requires either Haligtree Medallion or finishing White-Faced Varre's Questline. </li>
+            <ul class="collapse in" id="liurniaofthe_lakes_bosses_col">
+              <li class="" data-id="bosses_4_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Cleanrot Knight</td>
+                      <td class="col-md-4">Stillwater Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Adan, Thief of Fire</td>
+                      <td class="col-md-4">Malefactor's Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Burial Tree Watchdog</td>
+                      <td class="col-md-4">Cliffbottom Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Tibia Mariner</td>
+                      <td class="col-md-4">East Liurnia</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Gate Town Bridge</td>
+                      <td class="col-md-4">Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Preceptor Miriam</td>
+                      <td class="col-md-4">Carian Study Hall</td>
+                      <td class="col-md-4">NPC invader. Pain in the ass.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godskin Noble</td>
+                      <td class="col-md-4">Divine Tower of Liurnia Bridge</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Deathbird</td>
+                      <td class="col-md-4">Scenic Isle</td>
+                      <td class="col-md-4">Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Grafted Scion</td>
+                      <td class="col-md-4">Fallen Ruins of the Lake</td>
+                      <td class="col-md-4">Field boss. Disguised as a lobster. Kill the lobster in the area and it will turn into a Grafted Scion.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Glintstone Dragon Smarag</td>
+                      <td class="col-md-4">Temple Quarter</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Crystalian (Spear) & Crystalian (Staff)</td>
+                      <td class="col-md-4">Academy Crystal Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_12">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Death Rite Bird</td>
+                      <td class="col-md-4">Gate Town North</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_13">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Crystalian (Ringblade)</td>
+                      <td class="col-md-4">Raya Lucaria Crystal Tunnel</td>
+                      <td class="col-md-4">Drops Smithing-Stone Miner's Bell Bearing, unlocks Smithing Stones [1] & [2] for purchase from Twin Maiden Husks.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_14">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Bell Bearing Hunter</td>
+                      <td class="col-md-4">Church of Vows</td>
+                      <td class="col-md-4">Field boss. Nighttime only. Buy something from Miriel. Pass time, then rest once to summon.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_15">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Erdtree Avatar</td>
+                      <td class="col-md-4">Minor Erdtree (East)</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_16">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Cemetary Shade</td>
+                      <td class="col-md-4">Black Knife Catacombs</td>
+                      <td class="col-md-4">Main boss of the dungeon.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_17">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Black Knife Assassin</td>
+                      <td class="col-md-4">Black Knife Catacombs</td>
+                      <td class="col-md-4">Secret boss, hidden behind illusory wall. Related to Rogier and Fia's questlines.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_18">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Festering Fingerprint Vyke</td>
+                      <td class="col-md-4">Church of Inhibition</td>
+                      <td class="col-md-4">NPC invader.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_19">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Bellum Highway Forest</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_20">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Royal Revenant</td>
+                      <td class="col-md-4">Kingsrealm Ruins Underground</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_21">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Grafted Scion</td>
+                      <td class="col-md-4">Chapel of Anticipation</td>
+                      <td class="col-md-4">Not really in Liurnia, closer to Stormveil. But you can only access via The Four Belfries in Liurnia.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_22">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Bols, Carian Knight</td>
+                      <td class="col-md-4">Cuckoo's Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_23">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Edgar, the Revenger</td>
+                      <td class="col-md-4">Revenger's Shack</td>
+                      <td class="col-md-4">Another NPC invader.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_24">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Erdtree Avatar</td>
+                      <td class="col-md-4">Minor Erdtree (West)</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_25">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Spirit-Caller Snail</td>
+                      <td class="col-md-4">Road's End Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_26">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Omenkiller</td>
+                      <td class="col-md-4">Village of the Albinaurics</td>
+                      <td class="col-md-4">Watch out for dogs.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_27">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Royal Knight Loretta</td>
+                      <td class="col-md-4">Caria Manor</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_28">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Red Wolf</td>
+                      <td class="col-md-4">Behind Caria Manor</td>
+                      <td class="col-md-4">Field boss. Boss enemy, but not "real boss".</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_29">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Alabaster Lord</td>
+                      <td class="col-md-4">Royal Grave Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_30">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Glintstone Dragon Adula</td>
+                      <td class="col-md-4">Three Sisters & Moonlight Altar</td>
+                      <td class="col-md-4">Field boss. Disappears from Three Sisters mid-fight, then reappears at Moonlight Altar.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_31">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Red Wolf</td>
+                      <td class="col-md-4">Moonlight Altar</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_32">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Alecto, Black Knife Ringleader</td>
+                      <td class="col-md-4">Ringleader's Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_33">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Magma Wyrm Makar</td>
+                      <td class="col-md-4">Ruin-Strewn Precipice</td>
+                      <td class="col-md-4">Required if you want to bypass Grand Lift of Dectus to get to Altus Plataeu.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_34">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ravenmount Assassin</td>
+                      <td class="col-md-4">Raya Lucaria Academy</td>
+                      <td class="col-md-4">Go north from Main Academy Gate Site of Grace.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_35">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Red Wolf of Radagon</td>
+                      <td class="col-md-4">Raya Lucaria Academy</td>
+                      <td class="col-md-4">Main boss. Required to get to Rennala, Queen of the Full Moon.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_4_36">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Rennala, Queen of the Full Moon</td>
+                      <td class="col-md-4">Raya Lucaria Academy</td>
+                      <td class="col-md-4">Main boss. Semi-required for story progression.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
-            <h3 id="glintstone_crafttsmans_cookbook">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#glintstone_crafttsmans_cookbook_col"></a>Glintstone Craftsman's Cookbook
-              <span id="cookbooks_totals_5"></span>
+            <h3 id="caelid_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#caelid_bosses_col"></a>Caelid
+              <span id="bosses_totals_5"></span>
             </h3>
-            <ul class="collapse in" id="glintstone_crafttsmans_cookbook_col">
-              <li class="" data-id="cookbooks_5_1">1. In outpost North-West of Church of Irith next to Lake-Facing Cliffs Grace</li>
-              <li class="" data-id="cookbooks_5_2">2. Lanskyar Ruins in South East Liurnia Lake</li>
-              <li class="" data-id="cookbooks_5_3">3. Highway Lookout Tower in East Liurnia Lake, North-West of Liurnia Highway North Grace</li>
-              <li class="" data-id="cookbooks_5_4">4. Academy Gate Town South-East of Raya Lucaria Academy. It's in a chest North-West of the Grace.</li>
-              <li class="" data-id="cookbooks_5_5">5. Raya Lucaria Academy in a chest past the Schoolhouse Classroom Grace</li>
-              <li class="" data-id="cookbooks_5_6">6. Caria Manor in a room South-East of the courtyard.</li>
-              <li class="" data-id="cookbooks_5_7">7. Pidia in Caria Manor. Complete Caria Manor then go to Seluvis's Rise West of it and then go east and drop onto the rampart from the cliff.</li>
-              <li class="" data-id="cookbooks_5_8">8. South-West of Albinaurics Rise in East Consecrated Snowfield. Requires Haligtree Medallion. </li>
+            <ul class="collapse in" id="caelid_bosses_col">
+              <li class="" data-id="bosses_5_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Magma Wyrm</td>
+                      <td class="col-md-4">Gael Tunnel</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Erdtree Avatar</td>
+                      <td class="col-md-4">Minor Erdtree (West)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Erdtree Burial Watchdog (Sword) & Erdtree Burial Watchdog (Staff)</td>
+                      <td class="col-md-4">Minor Erdtree Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Mad Pumpkin Head (Hammer) & Mad Pumpkin Head (Flail)</td>
+                      <td class="col-md-4">Caelem Ruins Underground</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Knight of the Great Jar (x3)</td>
+                      <td class="col-md-4">Caelid Colosseum</td>
+                      <td class="col-md-4">NPC invaders. Defeat all 3 in one life to get a reward from the Great Jar.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Frenzied Duelist</td>
+                      <td class="col-md-4">Gaol Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Decaying Ekzykes</td>
+                      <td class="col-md-4">Caelid Highway South</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Caelid Highway South</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Death Rite Bird</td>
+                      <td class="col-md-4">Southern Aeonia Swamp Bank</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Commander O'Neil</td>
+                      <td class="col-md-4">Aeonia Swamp</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Milicent</td>
+                      <td class="col-md-4">Aeonia Swamp</td>
+                      <td class="col-md-4">NPC invader.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_12">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Nox Priest & Nox Swordstress</td>
+                      <td class="col-md-4">Chair-Crypt of Sellia</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_13">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Fallingstar Beast</td>
+                      <td class="col-md-4">Sellia Crystal Tunnel</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_14">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Cleanrot Knight (Sickle) & Cleanrot Knight (Spear)</td>
+                      <td class="col-md-4">Abandoned Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_15">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Battlemage Hugues</td>
+                      <td class="col-md-4">Sellia Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_16">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Elder Dragon Greyoll</td>
+                      <td class="col-md-4">Fort Faroth (Outside)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_17">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Putrid Crystalian (Spear), Putrid Crystalian (Ringblade) & Putrid Crystalian (Staff)</td>
+                      <td class="col-md-4">Sellia Hideaway</td>
+                      <td class="col-md-4">Annoying as all hell.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_18">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godskin Apostle</td>
+                      <td class="col-md-4">Divine Tower of Caelid</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_19">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Bell Bearing Hunter</td>
+                      <td class="col-md-4">Isolated Merchant's Shack</td>
+                      <td class="col-md-4">Field boss. Nighttime only. Buy something from merchant. Pass time, then rest once to summon.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_20">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Putrid Avatar</td>
+                      <td class="col-md-4">Minor Erdtree (East)</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_21">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Beastman of Farum Azula (Greatsword) & Beastman of Farum Azula (Throwing Knife)</td>
+                      <td class="col-md-4">Dragonbarrow Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_22">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Lenne's Rise Bridge</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_23">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Flying Dragon Greyll</td>
+                      <td class="col-md-4">Farum Greatbridge</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_24">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Black Blade Kindred</td>
+                      <td class="col-md-4">Bestial Sanctum (Outside)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_25">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Gurranq, Beast Clergyman</td>
+                      <td class="col-md-4">Bestial Sanctum (Inside)</td>
+                      <td class="col-md-4">Only triggers after you give him 4 Deathroots.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_26">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Misbegotten Warrior & Crucible Knight</td>
+                      <td class="col-md-4">Redmane Castle</td>
+                      <td class="col-md-4">Semi-required to get to Radahn, but can be skipped if you progress Ranni's quest to a certain point.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_5_27">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Starscourge Radahn</td>
+                      <td class="col-md-4">Wailing Dunes (beyond Redmane Castle)</td>
+                      <td class="col-md-4">Main boss. Semi-required for story progression.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
-            <h3 id="frenzied_cookbook">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#frenzied_cookbook_col"></a>Frenzied Cookbook
-              <span id="cookbooks_totals_6"></span>
+            <h3 id="altus_plataeu_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#altus_plataeu_bosses_col"></a>Altus Plataeu
+              <span id="bosses_totals_6"></span>
             </h3>
-            <ul class="collapse in" id="frenzied_cookbook_col">
-              <li class="" data-id="cookbooks_6_1">1. Frenzied Flame Village in North-East Liurnia Lake</li>
-              <li class="" data-id="cookbooks_6_2">2. On the Path Down to the Frenzied Flame.</li>
+            <ul class="collapse in" id="altus_plataeu_bosses_col">
+              <li class="" data-id="bosses_6_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godeferoy the Grafted</td>
+                      <td class="col-md-4">Golden Lineage Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Altus Highway</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Demi-Human Queen Gilika</td>
+                      <td class="col-md-4">Lux Ruins</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Eleaonora, Violet Bloody Finger</td>
+                      <td class="col-md-4">Second Church of Marika</td>
+                      <td class="col-md-4">NPC invader. Part of Bloody Finger Hunter Yura's quest.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Rileigh the Idle</td>
+                      <td class="col-md-4">Bridge of Iniquity</td>
+                      <td class="col-md-4">NPC. You can invade his world. Related to Volcano Manor quest.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Sanguine Noble</td>
+                      <td class="col-md-4">Writheblood Ruins</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Wormface</td>
+                      <td class="col-md-4">Minor Erdtree</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godskin Apostle</td>
+                      <td class="col-md-4">Dominula Windmill Village</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Crystalian (Spear) & Crystalian (Ringblade)</td>
+                      <td class="col-md-4">Altus Tunnel</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Black Knife Assassin</td>
+                      <td class="col-md-4">Sainted Hero's Grave (Entrance)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ancient Hero of Zamor</td>
+                      <td class="col-md-4">Sainted Hero's Grave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_12">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Omenkiller & Miranda, the Blighted Bloom</td>
+                      <td class="col-md-4">Perfumer's Grotto</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_13">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Fallingstar Beast</td>
+                      <td class="col-md-4">South Altus Plateau Crater</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_14">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ancient Dragon Lansseax (Part 2)</td>
+                      <td class="col-md-4">Rampartside (Southeast)</td>
+                      <td class="col-md-4">Part 1 of this encounter takes place in Mt. Gelmir.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_6_15">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Tree Sentinel (x2)</td>
+                      <td class="col-md-4">Leyndell Entrance</td>
+                      <td class="col-md-4">Is one annoying bastard (x2).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
-            <h3 id="perfumers_cookbook">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#perfumers_cookbook_col"></a>Perfumer's Cookbook
-              <span id="cookbooks_totals_7"></span>
+            <h3 id="mt_gelmir_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#mt_gelmir_bosses_col"></a>Mt. Gelmir
+              <span id="bosses_totals_7"></span>
             </h3>
-            <ul class="collapse in" id="perfumers_cookbook_col">
-              <li class="" data-id="cookbooks_7_1">1. Perfumer's Ruins, North-West of Abandoned Coffin Grace in Altus Plateau, found by going through the "Cowards" path past the Magma Wyrm. </li>
-              <li class="" data-id="cookbooks_7_2">2. Rooftops of Shaded Castle in North Altus Plateau</li>
-              <li class="" data-id="cookbooks_7_3">3. Auriza Side Tomb North East of Leyndell. Open the chest in the room with a lot of benches. </li>
-              <li class="" data-id="cookbooks_7_4">4. Nomad in South/Center Ainsel River</li>
+            <ul class="collapse in" id="mt_gelmir_bosses_col">
+              <li class="" data-id="bosses_7_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ancient Dragon Lansseax (Part 1)</td>
+                      <td class="col-md-4">Abandoned Coffin (Northwest)</td>
+                      <td class="col-md-4">Part 2 of this encounter takes place in Altus Plateau. Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Misbegotten Warrior & Perfumer Tricia</td>
+                      <td class="col-md-4">Unsightly Catacombs</td>
+                      <td class="col-md-4">Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Tibia Mariner</td>
+                      <td class="col-md-4">Wyndham Ruins</td>
+                      <td class="col-md-4">Field boss. Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Necromancer Garris & Black Knife Assassin</td>
+                      <td class="col-md-4">Sage's Cave</td>
+                      <td class="col-md-4">Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Burial Tree Watchdog</td>
+                      <td class="col-md-4">Wyndham Catacombs</td>
+                      <td class="col-md-4">Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Stonedigger Troll</td>
+                      <td class="col-md-4">Old Altus Tunnel</td>
+                      <td class="col-md-4">Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Maleigh Marais, Shaded Castle Castellan</td>
+                      <td class="col-md-4">The Shaded Castle (West)</td>
+                      <td class="col-md-4">Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Elemer of the Briar</td>
+                      <td class="col-md-4">The Shaded Castle</td>
+                      <td class="col-md-4">Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Rileigh the Idle</td>
+                      <td class="col-md-4">Bridge of Iniquity</td>
+                      <td class="col-md-4">Technically not in Mt. Gelmir, but part of Mt. Gelmir map.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Grafted Scion</td>
+                      <td class="col-md-4">Mt. Gelmir (North)</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Demi-Human Queen Margot</td>
+                      <td class="col-md-4">Volcano Cave</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_12">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ulcerated Tree Spirit</td>
+                      <td class="col-md-4">Minor Erdtree</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_13">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Kindred of Rot (x2)</td>
+                      <td class="col-md-4">Seethewater Cave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_14">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Red Wolf of the Champion</td>
+                      <td class="col-md-4">Gelmir Hero's Grave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_15">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Full-Grown Fallingstar Beast</td>
+                      <td class="col-md-4">Ninth Mt. Gelmir Campsite</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_16">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Wormface</td>
+                      <td class="col-md-4">Road of Iniquity</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_17">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Fire Prelate</td>
+                      <td class="col-md-4">Fort Laiedd</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_18">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Magma Wyrm</td>
+                      <td class="col-md-4">Fort Laiedd (South)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_19">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Demi-Human Queen Maggie</td>
+                      <td class="col-md-4">Hermit Village</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_20">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Abductor Virgin (x2)</td>
+                      <td class="col-md-4">Volcano Manor</td>
+                      <td class="col-md-4">Accessible from Raya Lucaria Academy, by dying to the Abductor Virgin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_21">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Inquisitor Ghiza</td>
+                      <td class="col-md-4">Volcano Manor (Upper Floor)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_22">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Magma Wyrm</td>
+                      <td class="col-md-4">Volcano Manor</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_23">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godskin Noble</td>
+                      <td class="col-md-4">Volcano Manor</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_24">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Tanith's Knigth</td>
+                      <td class="col-md-4">Volcano Manor</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_25">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">God-Devouring Serpent</td>
+                      <td class="col-md-4">Volcano Manor</td>
+                      <td class="col-md-4">Required to get to Rykard, Lord of Blasphemy.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_7_26">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Rykard, Lord of Blasphemy</td>
+                      <td class="col-md-4">Volcano Manor</td>
+                      <td class="col-md-4">Main boss. Semi-required for story progression.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
-            <h3 id="ancient_dragon_cookbooks">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#ancient_dragon_cookbooks_col"></a>Ancient Dragon Apostle's Cookbook
-              <span id="cookbooks_totals_8"></span>
+            <h3 id="leyndell_royal_capital_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#leyndell_royal_capital_bosses_col"></a>Leyndell, Royal Capital
+              <span id="bosses_totals_8"></span>
             </h3>
-            <ul class="collapse in" id="ancient_dragon_cookbooks_col">
-              <li class="" data-id="cookbooks_8_1">1. Wyndham Catacombs in West Altus Plateau. South-East of Volcano Manor</li>
-              <li class="" data-id="cookbooks_8_2">2. Nomad just North of the Forest-Spanning Greatbridge Grace on the South side of the broken bridge in North/Central Altus Plateau. </li>
-              <li class="" data-id="cookbooks_8_3">3. Cathedral of Dragon Communion in South Caelid, West of Castle Redmane. </li>
-              <li class="" data-id="cookbooks_8_4">4. Crumbling Farum Azula on a roof in the South-West section past a dragon.</li>
+            <ul class="collapse in" id="leyndell_royal_capital_bosses_col">
+              <li class="" data-id="bosses_8_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ulcerated Tree Spirit</td>
+                      <td class="col-md-4">Capital Outskirts (Southwest)</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Valiant Gargoyle</td>
+                      <td class="col-md-4">Leyndell Entrance</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Margit, the Fell Omen</td>
+                      <td class="col-md-4">Capital Outskirts (Northwest)</td>
+                      <td class="col-md-4">Tries to put your foolish ambitions to rest again.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Deathbird</td>
+                      <td class="col-md-4">Capital Outskirts (North)</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Onyx Lord</td>
+                      <td class="col-md-4">Sealed Tunnel</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">The Loathsome Dung Eater</td>
+                      <td class="col-md-4">Capital Outskirts</td>
+                      <td class="col-md-4">Part of the Dung Eater's questline.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Draconic Tree Sentinel</td>
+                      <td class="col-md-4">Inner Leyndell Entrance</td>
+                      <td class="col-md-4">Required to get inside Leyndell proper.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Grave Warden Duelist</td>
+                      <td class="col-md-4">Auriza Side Tomb</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Crucible Knight Ordovis & Crucible Knight</td>
+                      <td class="col-md-4">Auriza Hero's Grave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Erdtree Avatar</td>
+                      <td class="col-md-4">Leyndell Main Road</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ulcerated Tree Spirit</td>
+                      <td class="col-md-4">Lower Capital Church</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_12">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Valiant Gargoyle</td>
+                      <td class="col-md-4">West Capital Rampart</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_13">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Vargram & Wilhelm</td>
+                      <td class="col-md-4">Fortified Manor</td>
+                      <td class="col-md-4">NPCs. You can invade their world. Related to Volcano Manor quest.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_14">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Black Knife Assassin</td>
+                      <td class="col-md-4">Queen's Bedchamber</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_15">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Fell Twins (x2)</td>
+                      <td class="col-md-4">Divine Tower of East Altus Bridge</td>
+                      <td class="col-md-4">Return to the bridge after you have already gone to the Forbidden Lands to trigger the fight.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_16">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Mohg, the Omen</td>
+                      <td class="col-md-4">Cathedral of the Forsaken</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_17">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godfrey, First Elden Lord</td>
+                      <td class="col-md-4">Erdtree Sanctuary</td>
+                      <td class="col-md-4">Golden Shade. Required to get to Morgott, the Omen King.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_8_18">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Morgott, the Omen King</td>
+                      <td class="col-md-4">The Elden Throne</td>
+                      <td class="col-md-4">Main boss. Semi-required for story progression.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="mountaintopsofthe_giants_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#mountaintopsofthe_giants_bosses_col"></a>Mountaintops of the Giants
+              <span id="bosses_totals_9"></span>
+            </h3>
+            <ul class="collapse in" id="mountaintopsofthe_giants_bosses_col">
+              <li class="" data-id="bosses_9_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry</td>
+                      <td class="col-md-4">Forbidden Lands</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Black Blade Kindred</td>
+                      <td class="col-md-4">Grand Lift of Rold</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ancient Hero of Zamor</td>
+                      <td class="col-md-4">Giant-Conquering Hero's Grave</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ulcerated Tree Spirit</td>
+                      <td class="col-md-4">Giants' Mountaintop Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Erdtree Avatar</td>
+                      <td class="col-md-4">Minor Erdtree</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Juno Hoslow</td>
+                      <td class="col-md-4">Shack of the Lofty</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Death Rite Bird</td>
+                      <td class="col-md-4">North Mountaintops</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Tibia Mariner</td>
+                      <td class="col-md-4">North Mountaintops</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Commander Niall</td>
+                      <td class="col-md-4">Castle Sol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_10">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Vyke, Knight of the Roundtable</td>
+                      <td class="col-md-4">Lord Contender's Evergaol</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_11">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Borealis, the Freezing Fog</td>
+                      <td class="col-md-4">Frozen Lake</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_12">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Bloody Finger Okina</td>
+                      <td class="col-md-4">Church of Repose</td>
+                      <td class="col-md-4">NPC invader.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_13">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Loretta, Knight of the Haligtree</td>
+                      <td class="col-md-4">Miquella's Haligree</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_14">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Malenia, Blade of Miquella</td>
+                      <td class="col-md-4">Elphael, Brace of the Haligtree</td>
+                      <td class="col-md-4">Bullshit.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_9_15">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Fire Giant</td>
+                      <td class="col-md-4">Flame Peak</td>
+                      <td class="col-md-4">Main boss. Required to proceed to Forge of the Giants.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="consecrated_snowfield_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#consecrated_snowfield_bosses_col"></a>Consecrated Snowfield
+              <span id="bosses_totals_10"></span>
+            </h3>
+            <ul class="collapse in" id="consecrated_snowfield_bosses_col">
+              <li class="" data-id="bosses_10_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Putrid Grave Warden Duelist</td>
+                      <td class="col-md-4">Consecrated Snowfield Catacombs</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Night's Cavalry (x2)</td>
+                      <td class="col-md-4">Snowfields Wagon</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Astel, Stars of Darkness</td>
+                      <td class="col-md-4">Yelough Anix Tunnel</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Sanguine Noble</td>
+                      <td class="col-md-4">Consecrated Snowfield (West)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Great Wyrm Theodorix</td>
+                      <td class="col-md-4">Consecrated Snowfield (East)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Misbegotten Crusader</td>
+                      <td class="col-md-4">Cave of the Forlorn</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_7">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Putrid Avatar</td>
+                      <td class="col-md-4">Minor Erdtree</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_8">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Death Rite Bird</td>
+                      <td class="col-md-4">Consecrated Snowfield (North)</td>
+                      <td class="col-md-4">Field boss. Nighttime only.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_10_9">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Black Knife Assassin</td>
+                      <td class="col-md-4">Ordina, Liturgical Town</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="crumbling_farum_azula_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#crumbling_farum_azula_bosses_col"></a>Crumbling Farum Azula
+              <span id="bosses_totals_11"></span>
+            </h3>
+            <ul class="collapse in" id="crumbling_farum_azula_bosses_col">
+              <li class="" data-id="bosses_11_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Wormface</td>
+                      <td class="col-md-4">Crumbling Farum Azula (Southwest)</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_11_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godskin Duo (Godskin Noble & Godskin Apostle)</td>
+                      <td class="col-md-4">Dragon Temple (Altar)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_11_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Recusant Bernahl</td>
+                      <td class="col-md-4">Dragon Temple (Rooftop)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_11_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Draconic Tree Sentinel</td>
+                      <td class="col-md-4">Dragon Temple</td>
+                      <td class="col-md-4">One annoying bastard, but more annoying.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_11_5">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Dragonlord Placidusax</td>
+                      <td class="col-md-4">Dragon Temple</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_11_6">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Maliketh, the Black Blade</td>
+                      <td class="col-md-4">Crumbling Farum Azula</td>
+                      <td class="col-md-4">Required to get to Leyndell, Ashen Capital.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="leyndell_ashen_capital_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#leyndell_ashen_capital_bosses_col"></a>Leyndell, Ashen Capital
+              <span id="bosses_totals_12"></span>
+            </h3>
+            <ul class="collapse in" id="leyndell_ashen_capital_bosses_col">
+              <li class="" data-id="bosses_12_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Sir Gideon Ofnir</td>
+                      <td class="col-md-4">Erdtree Sanctuary</td>
+                      <td class="col-md-4">Required.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_12_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Godfrey, First Elden Lord</td>
+                      <td class="col-md-4">Elden Throne</td>
+                      <td class="col-md-4">Required.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_12_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Radagon of the Golden Order</td>
+                      <td class="col-md-4">Fractured Marika</td>
+                      <td class="col-md-4">Required.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_12_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Elden Beast</td>
+                      <td class="col-md-4">Fractured Marika</td>
+                      <td class="col-md-4">Required.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="siofra_river_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#siofra_river_bosses_col"></a>Siofra River
+              <span id="bosses_totals_13"></span>
+            </h3>
+            <ul class="collapse in" id="siofra_river_bosses_col">
+              <li class="" data-id="bosses_13_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Dragonkin Soldier</td>
+                      <td class="col-md-4">Siofra River (Cliffs)</td>
+                      <td class="col-md-4">Field boss. Is accessible by taking a waygate in the eastern part of Siofra River.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_13_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Ancestor Spirit</td>
+                      <td class="col-md-4">Hallowhorn Grounds</td>
+                      <td class="col-md-4">You need to light eight braziers around Siofra River to activate him.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="nokron_eternal_city_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#nokron_eternal_city_bosses_col"></a>Nokron, Eternal City
+              <span id="bosses_totals_14"></span>
+            </h3>
+            <ul class="collapse in" id="nokron_eternal_city_bosses_col">
+              <li class="" data-id="bosses_14_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Mimic Tear</td>
+                      <td class="col-md-4">Nokron, Eternal City</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_14_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Regal Ancestor Spirit</td>
+                      <td class="col-md-4">Hallowhorn Grounds</td>
+                      <td class="col-md-4">You need to light six braziers around Nokron, Eternal City to activate him.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_14_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Valiant Gargoyle & Valiant Gargoyle (Twinblade)</td>
+                      <td class="col-md-4">Siofra Aqueduct</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="mohgwyn_palace_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#mohgwyn_palace_bosses_col"></a>Mohgwyn Palace
+              <span id="bosses_totals_15"></span>
+            </h3>
+            <ul class="collapse in" id="mohgwyn_palace_bosses_col">
+              <li class="" data-id="bosses_15_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Nameless White Mask (x3)</td>
+                      <td class="col-md-4">Mohgwyn Palace (Lake of Blood)</td>
+                      <td class="col-md-4">One of the three Nameless White Masks drops the full War Surgeon set</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_15_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">White-Faced Varré</td>
+                      <td class="col-md-4">Mohgwyn Dynasty Mausoleum</td>
+                      <td class="col-md-4">Use the Invasion sign near Mausoleum Dynasty Midpoint Grace to invade his world</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_15_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Mohg, Lord of Blood</td>
+                      <td class="col-md-4">Mohgwyn Dynasty Mausoleum</td>
+                      <td class="col-md-4">Accessible through Varre's quest, or by waygate in Consecrated Snowfield.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="ainsel_river_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#ainsel_river_bosses_col"></a>Ainsel River
+              <span id="bosses_totals_16"></span>
+            </h3>
+            <ul class="collapse in" id="ainsel_river_bosses_col">
+              <li class="" data-id="bosses_16_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Dragonkin Soldier of Nokstella</td>
+                      <td class="col-md-4">Ainsel River (West)</td>
+                      <td class="col-md-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_16_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Baleful Shadow</td>
+                      <td class="col-md-4">Ainsel River</td>
+                      <td class="col-md-4">NPC invader. Part of Ranni's questline.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="lakeof_rot_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#lakeof_rot_bosses_col"></a>Lake of Rot
+              <span id="bosses_totals_17"></span>
+            </h3>
+            <ul class="collapse in" id="lakeof_rot_bosses_col">
+              <li class="" data-id="bosses_17_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Dragonkin Soldier</td>
+                      <td class="col-md-4">Lake of Rot (South East)</td>
+                      <td class="col-md-4">Field boss. Raise four platforms around him (use pressure plate east of him) to avoid Scarlet Rot.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_17_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Astel, Naturalborn of the Void</td>
+                      <td class="col-md-4">Grand Cloister</td>
+                      <td class="col-md-4">Accessible via a coffin in Grand Cloister. Required for Ranni's questline.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <h3 id="deeproot_depths_bosses">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#deeproot_depths_bosses_col"></a>Deeproot Depths
+              <span id="bosses_totals_18"></span>
+            </h3>
+            <ul class="collapse in" id="deeproot_depths_bosses_col">
+              <li class="" data-id="bosses_18_1">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Minor Erdtree</td>
+                      <td class="col-md-4">Deeproot Depths</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_18_2">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Crucible Knight Siluria</td>
+                      <td class="col-md-4">Great Erdtree</td>
+                      <td class="col-md-4">Field boss.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_18_3">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Fia's Champions</td>
+                      <td class="col-md-4">Deeproot Depths</td>
+                      <td class="col-md-4">NPC invaders. Two solo fights, then a group of three. Part of Fia's questline.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="" data-id="bosses_18_4">
+                <table class="table table-bordered table-sm">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">Lichdragon Fortissax</td>
+                      <td class="col-md-4">Deeproot Depths</td>
+                      <td class="col-md-4">Part of Fia's questline.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
           </div>
         </div>
@@ -1115,67 +3510,174 @@
             </ul>
           </div>
         </div>
-        <div class="tab-pane" id="tababoveground_bosses">
-          <h2>Aboveground Bosses
-            <span id="aboveground_bosses_overall_total"></span>
+        <div class="tab-pane" id="tabcookbooks">
+          <h2>Cookbooks
+            <span id="cookbooks_overall_total"></span>
           </h2>
           <ul class="table_of_contents">
             <li>
-              <a href="#weeping_peninsula_ab_bosses">Weeping Peninsula</a>
-              <span id="aboveground_bosses_nav_totals_1"></span>
+              <a href="#nomadic_cookbooks">Nomadic Cookbook</a>
+              <span id="cookbooks_nav_totals_1"></span>
+            </li>
+            <li>
+              <a href="#missionary_cookbooks">Missionary Cookbook</a>
+              <span id="cookbooks_nav_totals_2"></span>
+            </li>
+            <li>
+              <a href="#armorer_cookbooks">Armorer Cookbook</a>
+              <span id="cookbooks_nav_totals_3"></span>
+            </li>
+            <li>
+              <a href="#fevors_cookbook">Fevor's Cookbook</a>
+              <span id="cookbooks_nav_totals_4"></span>
+            </li>
+            <li>
+              <a href="#glintstone_crafttsmans_cookbook">Glintstone Craftsman's Cookbook</a>
+              <span id="cookbooks_nav_totals_5"></span>
+            </li>
+            <li>
+              <a href="#frenzied_cookbook">Frenzied Cookbook</a>
+              <span id="cookbooks_nav_totals_6"></span>
+            </li>
+            <li>
+              <a href="#perfumers_cookbook">Perfumer's Cookbook</a>
+              <span id="cookbooks_nav_totals_7"></span>
+            </li>
+            <li>
+              <a href="#ancient_dragon_cookbooks">Ancient Dragon Apostle's Cookbook</a>
+              <span id="cookbooks_nav_totals_8"></span>
             </li>
           </ul>
           <div class="form-group">
-            <input class="form-control" id="aboveground_bosses_search" placeholder="Start typing to filter results..." type="search">
+            <input class="form-control" id="cookbooks_search" placeholder="Start typing to filter results..." type="search">
           </div>
-          <div id="aboveground_bosses_list">
-            <h3 id="weeping_peninsula_ab_bosses">
-              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#weeping_peninsula_ab_bosses_col"></a>Weeping Peninsula
-              <span id="aboveground_bosses_totals_1"></span>
+          <div id="cookbooks_list">
+            <h3 id="nomadic_cookbooks">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#nomadic_cookbooks_col"></a>Nomadic Cookbook
+              <span id="cookbooks_totals_1"></span>
             </h3>
-            <ul class="collapse in" id="weeping_peninsula_ab_bosses_col">
-              <li class="f_boss" data-id="aboveground_bosses_1_1">
-                <table class="table table-bordered table-sm">
-                  <tbody>
-                    <tr>
-                      <td>Burial Tree Watchdog</td>
-                      <td>Impaler's Catacomb</td>
-                      <td>Has 4 imps with it</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="f_boss" data-id="aboveground_bosses_1_2">
-                <table class="table table-bordered table-sm">
-                  <tbody>
-                    <tr>
-                      <td>Runebear</td>
-                      <td>Earthbore Cave</td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
+            <ul class="collapse in" id="nomadic_cookbooks_col">
+              <li class="" data-id="cookbooks_1_1">1. Kale in Church of Elleh</li>
+              <li class="" data-id="cookbooks_1_2">2. Kale in Church of Elleh</li>
+              <li class="" data-id="cookbooks_1_3">3. Nomad in North Limgrave, West of Summonwater Village</li>
+              <li class="" data-id="cookbooks_1_4">4. Next to giant bear by Patches teleport(open the trapped chest in Murkwater Cave, located in the river going North from the lake in Limgrave)</li>
+              <li class="" data-id="cookbooks_1_5">5. Nomad Northwest of Fort Haight in the South-East section of the forest in East Limgrave</li>
+              <li class="" data-id="cookbooks_1_6">6. Fort Haight in the South-East section of the forest in East Limgrave</li>
+              <li class="" data-id="cookbooks_1_7">7. North of Stormhill Shack at the edge of the broken bridge</li>
+              <li class="" data-id="cookbooks_1_8">8. Tombsward Cave, South-East of Fourth Church of Marika in North-West Weeping Peninsula</li>
+              <li class="" data-id="cookbooks_1_9">9. Tombs ward Catacombs, South of Church of the Pilgrimage in North Weeping Peninsula. </li>
+              <li class="" data-id="cookbooks_1_10">10. In Stormveil Castle, from Rampart Tower Grace, go through the North Door and jump to the roof in the East. Keep going this way and you'll find it. </li>
+              <li class="" data-id="cookbooks_1_11">11. Nomad at the entrance to Liurnia Lake</li>
+              <li class="" data-id="cookbooks_1_12">12. Rose Church, South-West of Raya Lucaria</li>
+              <li class="" data-id="cookbooks_1_13">13. Nomad North of Bellum Church in North-East Liurnia Lake</li>
+              <li class="" data-id="cookbooks_1_14">14. Smoldering Church North-East Limgrave/North-West Caelid</li>
+              <li class="" data-id="cookbooks_1_15">15. Nomad South of Caelid swamp at fork in the road. </li>
+              <li class="" data-id="cookbooks_1_16">16. Nomad in South/Center of Ainsel River. </li>
+              <li class="" data-id="cookbooks_1_17">17. Nomad in center of Siofra River on top of wooden house. </li>
+              <li class="" data-id="cookbooks_1_18">18. Nomad in center of Siofra River on top of wooden house.</li>
+              <li class="" data-id="cookbooks_1_19">19. Woodfolk Ruins, East of the Minor Erdtree in North Altus Plateau</li>
+              <li class="" data-id="cookbooks_1_20">20. Nomad in North Mt. Gelmir, North-East of Volcano Manor</li>
+              <li class="" data-id="cookbooks_1_21">21. Volcano Manor in the area hidden behind the Illusory Wall in one of the hallway rooms. </li>
+              <li class="" data-id="cookbooks_1_22">22. Chest in West Lake of Rot, West of Ainsel River underground. May require Ranni's questline. </li>
+              <li class="" data-id="cookbooks_1_23">23. Consecrated Snowfield, North of the first Grace. Requires Haligtree Medallion</li>
+              <li class="" data-id="cookbooks_1_24">24. Mohgwyn Palace on the edge of the cliffs past the swamp. Requires Haligtree Medallion or completion of White-Faced Varre's Questline. </li>
+            </ul>
+            <h3 id="missionary_cookbooks">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#missionary_cookbooks_col"></a>Missionary Cookbook
+              <span id="cookbooks_totals_2"></span>
+            </h3>
+            <ul class="collapse in" id="missionary_cookbooks_col">
+              <li class="" data-id="cookbooks_2_1">1. Kale in Church of Elleh</li>
+              <li class="" data-id="cookbooks_2_2">2. Patches in Murkwater Cave located in the river going North from the lake in Limgrave.</li>
+              <li class="" data-id="cookbooks_2_3">3. Smoldering Church North-East Limgrave/North-West Caelid</li>
+              <li class="" data-id="cookbooks_2_4">4. Minor Erdtree Church, Southwest Leyndell Capital. </li>
+              <li class="" data-id="cookbooks_2_5">5. Siofra Aqueduct, in the crater in South-East forest in East Limgrave, made after Radahn fight. Past the Crucible Knight, North-East of Ancestral Woods Grace. </li>
+              <li class="" data-id="cookbooks_2_6">6. Volcano Manor, from Temple of Eiglay Grace, go up the elevator and hop down into the lava. Go past the the Iron maiden, through a window, down a ladder, and down the stairs.</li>
+              <li class="" data-id="cookbooks_2_7">7. Nomad in Mountaintops of the Giants, near the Ancient Snow Valley Ruins Grace. </li>
+            </ul>
+            <h3 id="armorer_cookbooks">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#armorer_cookbooks_col"></a>Armorer Cookbook
+              <span id="cookbooks_totals_3"></span>
+            </h3>
+            <ul class="collapse in" id="armorer_cookbooks_col">
+              <li class="" data-id="cookbooks_3_1">1. In camp north-east of North Agheel Lake Grace</li>
+              <li class="" data-id="cookbooks_3_2">2. Nomad by Coastal Cave in South-West Limgrave</li>
+              <li class="" data-id="cookbooks_3_3">3. Nomad Northwest of Fort Haight in the South-East section of the forest in East Limgrave</li>
+              <li class="" data-id="cookbooks_3_4">4. Castle Redmane in South-East Caelid in the North-West gatehouse</li>
+              <li class="" data-id="cookbooks_3_5">5. Castle Redmane in South-East Caelid. Follow the path going through the door in the South-West. </li>
+              <li class="" data-id="cookbooks_3_6">6. Siofra River. West of the Siofra River Bank Grace</li>
+              <li class="" data-id="cookbooks_3_7">7. Fort Laiedd in West Mt. Gelmir. West of Volcano Manor. </li>
+            </ul>
+            <h3 id="fevors_cookbook">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#fevors_cookbook_col"></a>Fevor's Cookbook
+              <span id="cookbooks_totals_4"></span>
+            </h3>
+            <ul class="collapse in" id="fevors_cookbook_col">
+              <li class="" data-id="cookbooks_4_1">1. On a stone tomb south of Summonwater Village in North-East Limgrave</li>
+              <li class="" data-id="cookbooks_4_2">2. Nomad East of Raya Lucaria Main Gate Grace. Requires Glintstone Key gotten next to the Dragon West of Raya Lucaria.</li>
+              <li class="" data-id="cookbooks_4_3">3. Reward from Gideon Ofnir for information on Mohgwyn Dynasty Medallion. Requires either Haligtree Medallion or finishing White-Faced Varre's Questline. </li>
+            </ul>
+            <h3 id="glintstone_crafttsmans_cookbook">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#glintstone_crafttsmans_cookbook_col"></a>Glintstone Craftsman's Cookbook
+              <span id="cookbooks_totals_5"></span>
+            </h3>
+            <ul class="collapse in" id="glintstone_crafttsmans_cookbook_col">
+              <li class="" data-id="cookbooks_5_1">1. In outpost North-West of Church of Irith next to Lake-Facing Cliffs Grace</li>
+              <li class="" data-id="cookbooks_5_2">2. Lanskyar Ruins in South East Liurnia Lake</li>
+              <li class="" data-id="cookbooks_5_3">3. Highway Lookout Tower in East Liurnia Lake, North-West of Liurnia Highway North Grace</li>
+              <li class="" data-id="cookbooks_5_4">4. Academy Gate Town South-East of Raya Lucaria Academy. It's in a chest North-West of the Grace.</li>
+              <li class="" data-id="cookbooks_5_5">5. Raya Lucaria Academy in a chest past the Schoolhouse Classroom Grace</li>
+              <li class="" data-id="cookbooks_5_6">6. Caria Manor in a room South-East of the courtyard.</li>
+              <li class="" data-id="cookbooks_5_7">7. Pidia in Caria Manor. Complete Caria Manor then go to Seluvis's Rise West of it and then go east and drop onto the rampart from the cliff.</li>
+              <li class="" data-id="cookbooks_5_8">8. South-West of Albinaurics Rise in East Consecrated Snowfield. Requires Haligtree Medallion. </li>
+            </ul>
+            <h3 id="frenzied_cookbook">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#frenzied_cookbook_col"></a>Frenzied Cookbook
+              <span id="cookbooks_totals_6"></span>
+            </h3>
+            <ul class="collapse in" id="frenzied_cookbook_col">
+              <li class="" data-id="cookbooks_6_1">1. Frenzied Flame Village in North-East Liurnia Lake</li>
+              <li class="" data-id="cookbooks_6_2">2. On the Path Down to the Frenzied Flame.</li>
+            </ul>
+            <h3 id="perfumers_cookbook">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#perfumers_cookbook_col"></a>Perfumer's Cookbook
+              <span id="cookbooks_totals_7"></span>
+            </h3>
+            <ul class="collapse in" id="perfumers_cookbook_col">
+              <li class="" data-id="cookbooks_7_1">1. Perfumer's Ruins, North-West of Abandoned Coffin Grace in Altus Plateau, found by going through the "Cowards" path past the Magma Wyrm. </li>
+              <li class="" data-id="cookbooks_7_2">2. Rooftops of Shaded Castle in North Altus Plateau</li>
+              <li class="" data-id="cookbooks_7_3">3. Auriza Side Tomb North East of Leyndell. Open the chest in the room with a lot of benches. </li>
+              <li class="" data-id="cookbooks_7_4">4. Nomad in South/Center Ainsel River</li>
+            </ul>
+            <h3 id="ancient_dragon_cookbooks">
+              <a class="btn btn-primary btn-collapse btn-sm" data-toggle="collapse" href="#ancient_dragon_cookbooks_col"></a>Ancient Dragon Apostle's Cookbook
+              <span id="cookbooks_totals_8"></span>
+            </h3>
+            <ul class="collapse in" id="ancient_dragon_cookbooks_col">
+              <li class="" data-id="cookbooks_8_1">1. Wyndham Catacombs in West Altus Plateau. South-East of Volcano Manor</li>
+              <li class="" data-id="cookbooks_8_2">2. Nomad just North of the Forest-Spanning Greatbridge Grace on the South side of the broken bridge in North/Central Altus Plateau. </li>
+              <li class="" data-id="cookbooks_8_3">3. Cathedral of Dragon Communion in South Caelid, West of Castle Redmane. </li>
+              <li class="" data-id="cookbooks_8_4">4. Crumbling Farum Azula on a roof in the South-West section past a dragon.</li>
             </ul>
           </div>
         </div>
         <div class="tab-pane" id="tabFAQ">
           <h2>FAQ</h2>
-            <p>The foundation of this guide was based on <a href="https://github.com/ZKjellberg">ZKjellberg</a>'s <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">Dark Soul's 3 Cheat Sheet</a> source code and <a href="https://www.reddit.com/r/Roundtable_Guides/comments/tiouti/guide_to_the_intended_route_through_the_game/">Athrek's Guide to the "Intended" Route Through the Game Without Breaking Everything</a></p>
-            <p>This guide has evolved thanks to the many <a href="https://github.com/azy2/Elden-Ring-Intended-Route/graphs/contributors">GitHub contributors</a> with many great suggestions, fixes and improvements!</p>
+        <p>The foundation of this guide was based on <a href="https://github.com/ZKjellberg">ZKjellberg</a>'s <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">Dark Soul's 3 Cheat Sheet</a> source code and <a href="https://www.reddit.com/r/Roundtable_Guides/comments/tiouti/guide_to_the_intended_route_through_the_game/">Athrek's Guide to the "Intended" Route Through the Game Without Breaking Everything</a></p>
+        <p>This guide has evolved thanks to the many <a href="https://github.com/azy2/Elden-Ring-Intended-Route/graphs/contributors">GitHub contributors</a> with many great suggestions, fixes and improvements!</p>
 
-            <h3>I have feedback, how can I contribute?</h3>
-            <p>You can visit the <a href="https://github.com/azy2/Elden-Ring-Intended-Route">GitHub repository</a> and <a href="https://github.com/azy2/Elden-Ring-Intended-Route/issues">report Issues</a> or create a fork and submit a Pull Request.</p>
+        <h3>I have feedback, how can I contribute?</h3>
+        <p>You can visit the <a href="https://github.com/azy2/Elden-Ring-Intended-Route">GitHub repository</a> and <a href="https://github.com/azy2/Elden-Ring-Intended-Route/issues">report Issues</a> or create a fork and submit a Pull Request.</p>
 
-            <h3>Do I need to follow the playthrough in this exact order?</h3>
-            <p>By "intended" what I mean is that this will get you through the game in the safest way possible and with as few risks as possible. This will, in some ways, take away a lot of the open-world aspect that the game offers. It may be the "intended" story, but I don't believe it is the "intended" way to play. With that said, if you plan to stick with the game for multiple playthroughs and enjoy the "Dark Souls Experience" please wait to use this guide until at least your second playthrough. However, I completely understand if you just don't have time for multiple playthroughs or find the idea of exploring the massive open world with no direction frustrating. With there only being so many hours in a day, and only so many of those hours being available to play with, it's perfectly fine if you just want to see all there is to see in a single playthrough. That's why this guide is here. I hope that this guide can help players of all kinds to enjoy this game as much as I've been enjoying it and see all that the game has to offer! So to all my fellow Tarnished....Hang in there, skeleton!</p>
+        <h3>Do I need to follow the playthrough in this exact order?</h3>
+        <p>By "intended" what I mean is that this will get you through the game in the safest way possible and with as few risks as possible. This will, in some ways, take away a lot of the open-world aspect that the game offers. It may be the "intended" story, but I don't believe it is the "intended" way to play. With that said, if you plan to stick with the game for multiple playthroughs and enjoy the "Dark Souls Experience" please wait to use this guide until at least your second playthrough. However, I completely understand if you just don't have time for multiple playthroughs or find the idea of exploring the massive open world with no direction frustrating. With there only being so many hours in a day, and only so many of those hours being available to play with, it's perfectly fine if you just want to see all there is to see in a single playthrough. That's why this guide is here. I hope that this guide can help players of all kinds to enjoy this game as much as I've been enjoying it and see all that the game has to offer! So to all my fellow Tarnished....Hang in there, skeleton!</p>
 
-            <h3>Can I use this for multiple characters?</h3>
-            <p>Yup, use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.</p>
+        <h3>Can I use this for multiple characters?</h3>
+        <p>Yup, use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.</p>
 
-            <h3>How does the checklist status get saved?</h3>
-            <p>The checklist is saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.</p>
-                
+        <h3>How does the checklist status get saved?</h3>
+        <p>The checklist is saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.</p>
+            
         </div>
         <div class="tab-pane" id="tabOptions">
           <h2>Options</h2>
@@ -1282,14 +3784,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.8.0/jets.min.js"></script>
     <script src="js/jquery.highlight.js"></script>
     <script src="js/main.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7FMWDCTF5"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'G-B7FMWDCTF5');
+gtag('config', 'G-B7FMWDCTF5');
 </script>
 
   </body>
