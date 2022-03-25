@@ -13,32 +13,32 @@ If you are interested in contributing to this guide, please do so. Follow this s
 1. Make a github account.
 2. Download and install [Github Desktop](https://desktop.github.com/) and then sign in with your github account.
 3. Then you will need to fork this project. That will create your own project that you download and make changes to. Later you'll submit a request to bring those changes back here and onto the website. To fork this project click the fork button on the top right of the page.
-4. Add whatever you want to `data.yaml`. Don't edit `index.html` as that is automatically generated based off of `data.yaml`. The data has to be in a specific format:
-
-All entries in a checklist are stored in data.yaml.
+4. All information for the website is stored in `data`. Each `.yaml` file is a different page. You can either add to existing files are create a new one. Don't edit `index.html` as that is automatically generated based off of the stuff in `data`. The data has to be in a specific format:
 
 Each page of the site starts like this:
 ```yaml
----
-title: "The Page Title"
-id: page_title
+title: "Weapons"
+id: weapons
 sections:
 ```
 
 Eeach section on a page starts like this:
 ```yaml
   -
-    title: Section Title
-    id: section_title
+    title: "Daggers"
+    id: daggers
+    link: "https://eldenring.wiki.fextralife.com/Daggers"
     num: 1
     items:
-      - [1, "f_boss", "Boss fight info goes here"]
-      - [2, "f_boss", "You can make tables", "By having multiple entries", "Like this"]
+      - [1, "f_weap", "Dagger"]
+      - [2, "f_weap", "You can make tables", "By having multiple entries", "Like this"]
+      - [3, "f_weap", "You can embed links like this: <a href=\"https://eldenring.wiki.fextralife.com/Black+Knife\"Black Knife</a>"]
+      - [4, "f_weap", "You can put any html in here, <b>Bold!</b>, <i>Italic</i>, etc."]
 ```
 
-All ids haveto be unique and the `num:` field also has to be unique. Within an item the first number has to be uinque as well. If you are adding a new line find the biggest number in that section and increase it by 1. The numbers do not have to be in order and you should not ever change an existing number because it will break everyones saved progress.
+All ids have to be unique and the `num:` field also has to be unique. Within an item the first number has to be uinque as well. If you are adding a new line find the biggest number in that section and increase it by 1. The numbers do not have to be in order and you should not ever change an existing number because it will break everyones saved progress.
 
-The second field in an item (`"f_boss"`) is used for the filtering system. The full list of filter classes is:
+The second field in an item (e.g. `"f_weap"`) is used for the filtering system. The full list of filter classes is:
 
 | Class   | Description |
 |---      |--- |
