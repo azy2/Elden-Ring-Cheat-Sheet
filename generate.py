@@ -16,7 +16,7 @@ def to_snake_case(name):
     name = re.sub('([a-z0-9])([A-Z])', r'\1_\2', name)
     return name.lower()
 
-yaml_files = ['walkthrough.yaml', 'quests.yaml', 'bosses.yaml', 'weapons.yaml', 'cookbooks.yaml']
+yaml_files = ['walkthrough.yaml', 'quests.yaml', 'bosses.yaml', 'legendaries.yaml', 'weapons.yaml', 'cookbooks.yaml']
 pages = []
 for yaml_file in yaml_files:
     with open(os.path.join('data', yaml_file), 'r') as data:
