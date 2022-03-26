@@ -143,30 +143,30 @@ with doc:
                             else:
                                 section_title += section['title']
                             section_title += span(id=page['id'] + "_totals_" + str(section['num']))
-                            with ul(id=section['id'] + "_col", cls="collapse in"):
-                                items = peekable(section['items'])
-                                for item in items:
-                                    id = str(item[0])
-                                    with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id, cls=item[1]):
-                                        if len(item) == 3:
+                            if 'table' in section:
+                                br()
+                                with table(id=section['id'] + "_col", cls="table table-striped table-sm").add(tbody()):
+                                    size = 12 // section['table']
+                                    items = peekable(section['items'])
+                                    for item in items:
+                                        id = str(item[0])
+                                        with tr(cls="item_content " + item[1], data_id=page['id'] + "_" + str(section['num']) + "_" + id):
+                                            th(cls="row table-checkbox").add(input_(id=page['id'] + "_" + str(section['num']) + "_" + id, type="checkbox"))
+                                            for pos in range(2, 2+section['table']):
+                                                td(cls="col-xs-" + str(size)).add(raw(item[pos]))
+                            else:
+                                with ul(id=section['id'] + "_col", cls="collapse in"):
+                                    items = peekable(section['items'])
+                                    for item in items:
+                                        id = str(item[0])
+                                        with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id, cls=item[1]):
                                             raw(item[2])
-                                        else:
-                                            with table(cls="table table-bordered table-sm").add(tbody()).add(tr()):
-                                                size = 12 // (len(item) - 2)
-                                                for pos in range(2, len(item)):
-                                                    td(cls="col-xs-" + str(size)).add(raw(item[pos]))
-                                    if isinstance(items.peek([0])[0], list):
-                                        item = next(items)
-                                        with ul():
-                                            for subitem in item:
-                                                with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id + "_" + str(item[0])):
-                                                    if len(subitem) == 3:
+                                        if isinstance(items.peek([0])[0], list):
+                                            item = next(items)
+                                            with ul():
+                                                for subitem in item:
+                                                    with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id + "_" + str(item[0])):
                                                         raw(subitem[2])
-                                                    else:
-                                                        with table(cls="table table-bordered table-sm").add(tbody()).add(tr()):
-                                                            size = 12 // (len(item) - 2)
-                                                            for pos in range(2, len(subitem)):
-                                                                td(cls="col-xs-" + str(size)).add(raw(subitem[pos]))
             with div(cls="tab-pane", id="tabFAQ"):
                 h2("FAQ")
                 raw("""
