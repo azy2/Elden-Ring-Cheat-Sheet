@@ -20,6 +20,10 @@
     .tab-pane { page-break-after: always; }
 }
 
+.table-label {
+  font-weight: 400;
+}
+
 label {
   width: 100%;
 }
@@ -116,7 +120,7 @@ body.hide_completed .completed {
   display: none !important;
 }
 
-tr.completed {
+tr.completed td label {
   text-decoration: line-through;
   -webkit-text-decoration: line-through !important;
 }

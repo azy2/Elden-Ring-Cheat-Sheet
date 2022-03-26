@@ -147,15 +147,16 @@ with doc:
                             section_title += span(id=page['id'] + "_totals_" + str(section['num']))
                             if 'table' in section:
                                 br()
-                                with table(id=section['id'] + "_col", cls="table table-striped table-sm").add(tbody()):
-                                    size = 12 // section['table']
-                                    items = peekable(section['items'])
-                                    for item in items:
-                                        id = str(item[0])
-                                        with tr(cls="item_content " + item[1], data_id=page['id'] + "_" + str(section['num']) + "_" + id):
-                                            th(cls="row table-checkbox").add(input_(id=page['id'] + "_" + str(section['num']) + "_" + id, type="checkbox"))
-                                            for pos in range(2, 2+section['table']):
-                                                td(cls="col-xs-" + str(size)).add(raw(item[pos]))
+                                with div(id=section['id'] + "_col", cls="collapse in", aria_expanded="true"):
+                                    with table(cls="table table-striped table-sm").add(tbody()):
+                                        size = 12 // section['table']
+                                        items = peekable(section['items'])
+                                        for item in items:
+                                            id = str(item[0])
+                                            with tr(cls="item_content form-check-label " + item[1], data_id=page['id'] + "_" + str(section['num']) + "_" + id):
+                                                th(cls="row table-checkbox").add(input_(id=page['id'] + "_" + str(section['num']) + "_" + id, type="checkbox"))
+                                                for pos in range(2, 2+section['table']):
+                                                    td(cls="col-xs-" + str(size)).add(label(raw(item[pos]), _for=page['id'] + "_" + str(section['num']) + "_" + id, cls="table-label"))
                             else:
                                 with div(id=section['id'] + "_col", cls="collapse in", aria_expanded="true"):
                                     items = peekable(section['items'])
