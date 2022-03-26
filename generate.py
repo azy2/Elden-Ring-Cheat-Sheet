@@ -7,7 +7,7 @@ from dominate.util import raw
 from more_itertools import peekable
 
 
-doc = dominate.document(title="Elden Ring Checklist")
+doc = dominate.document(title="Elden Ring Cheat Sheet")
 
 def to_snake_case(name):
     name = "".join(name.split())
@@ -154,7 +154,7 @@ with doc:
                                             with table(cls="table table-bordered table-sm").add(tbody()).add(tr()):
                                                 size = 12 // (len(item) - 2)
                                                 for pos in range(2, len(item)):
-                                                    td(cls="col-md-" + str(size)).add(raw(item[pos]))
+                                                    td(cls="col-xs-" + str(size)).add(raw(item[pos]))
                                     if isinstance(items.peek([0])[0], list):
                                         item = next(items)
                                         with ul():
@@ -166,7 +166,7 @@ with doc:
                                                         with table(cls="table table-bordered table-sm").add(tbody()).add(tr()):
                                                             size = 12 // (len(item) - 2)
                                                             for pos in range(2, len(subitem)):
-                                                                td(cls="col-md-" + str(size)).add(raw(subitem[pos]))
+                                                                td(cls="col-xs-" + str(size)).add(raw(subitem[pos]))
             with div(cls="tab-pane", id="tabFAQ"):
                 h2("FAQ")
                 raw("""

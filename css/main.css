@@ -118,6 +118,7 @@ body.hide_completed .completed {
 
 input[type="checkbox"]:checked + .item_content {
   text-decoration: line-through;
+  -webkit-text-decoration: line-through !important;
 }
 
 input[type="checkbox"] ~ .glyphicon-eye-close,
