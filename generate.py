@@ -16,7 +16,7 @@ def to_snake_case(name):
     name = re.sub('([a-z0-9])([A-Z])', r'\1_\2', name)
     return name.lower()
 
-yaml_files = ['walkthrough.yaml', 'quests.yaml', 'bosses.yaml', 'legendaries.yaml', 'weapons.yaml', 'sorceries.yaml', 'bell_bearings.yaml', 'cookbooks.yaml']
+yaml_files = ['walkthrough.yaml', 'quests.yaml', 'bosses.yaml', 'flasks.yaml', 'legendaries.yaml', 'weapons.yaml', 'sorceries.yaml', 'bell_bearings.yaml', 'cookbooks.yaml']
 pages = []
 for yaml_file in yaml_files:
     with open(os.path.join('data', yaml_file), 'r') as data:
@@ -47,6 +47,8 @@ for page in pages:
         item_nums = set()
         items = peekable(section['items'])
         for item in items:
+            if not isinstance(item, list):
+                continue
             if item[0] in item_nums:
                 print("Duplicate item num '" + str(item[0]) + "' in section '" + section['id'] + "' found in page '" + page['id'] + "'. All item nums must be unique within it's section.")
                 quit()
@@ -155,17 +157,25 @@ with doc:
                                             for pos in range(2, 2+section['table']):
                                                 td(cls="col-xs-" + str(size)).add(raw(item[pos]))
                             else:
-                                with ul(id=section['id'] + "_col", cls="collapse in"):
+                                with div(id=section['id'] + "_col", cls="collapse in", aria_expanded="true"):
                                     items = peekable(section['items'])
+                                    if not isinstance(items.peek(), list):
+                                        item = next(items)
+                                        h4(item)
+                                    u = ul(id=section['id'] + "_col", cls="collapse in")
                                     for item in items:
+                                        if not isinstance(item, list):
+                                            h4(item)
+                                            u = ul(id=section['id'] + "_col", cls="collapse in")
+                                            continue
                                         id = str(item[0])
-                                        with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id, cls=item[1]):
+                                        with u.add(li(data_id=page['id'] + "_" + str(section['num']) + "_" + id, cls=item[1])):
                                             raw(item[2])
                                         if isinstance(items.peek([0])[0], list):
                                             item = next(items)
-                                            with ul():
+                                            with u.add(ul()):
                                                 for subitem in item:
-                                                    with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id + "_" + str(item[0])):
+                                                    with li(data_id=page['id'] + "_" + str(section['num']) + "_" + id + "_" + str(subitem[0])):
                                                         raw(subitem[2])
             with div(cls="tab-pane", id="tabFAQ"):
                 h2("FAQ")
